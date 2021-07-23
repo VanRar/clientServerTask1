@@ -38,7 +38,7 @@ public class NonServer {
                     }
                     System.out.println("Получено сообщение от клиента: " + msg);
                     // отправляем сообщение клиента назад с пометкой ЭХО
-                    socketChannel.write(ByteBuffer.wrap(("Эхо: " +
+                    socketChannel.write(ByteBuffer.wrap(("вот твой результат: " +
                             result.toString()).getBytes(StandardCharsets.UTF_8)));
 
                 }
