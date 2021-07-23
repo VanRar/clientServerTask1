@@ -28,12 +28,12 @@ public class NonServer {
                     final String msg = new String(inputBuffer.array(), 0, bytesCount,
                             StandardCharsets.UTF_8);
                     inputBuffer.clear();
-                    if("end".equals(msg)) {
+                    if ("end".equals(msg)) {
                         exit = true;//в действительности наверное так не надо, но в данном случае норм
                         break;
                     }
                     String[] buffer = msg.split(" ");
-                    for(String s : buffer){
+                    for (String s : buffer) {
                         result.append(s);
                     }
                     System.out.println("Получено сообщение от клиента: " + msg);
